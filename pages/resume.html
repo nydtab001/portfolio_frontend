@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME | Taboka Nyadza Portfolio</title>
+    <style>
+      .info {
+        min-width: 1080px !important;
+        max-width: 1200px !important;
+      }
+
+      .space {
+        width:100%;
+        height: 70px;
+      }
+
+      #skills li {
+        margin-right: 30px;
+        padding: 0; 
+      }
+
+      #skills ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style-position: outside;
+        margin: 0px 0px;
+      }
+
+      #skills .content-des {
+        max-width: none;
+      }
+
+      #skills .timeline {
+        border: none;
+      }
+
+      @media  screen and (min-width: 601px){
+        .cont-title-mobile {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .info {
+          min-width: 365px !important;
+        }
+
+        .space {
+          height: 20px;
+        }
+
+        .cont-title-comp {
+          display: none;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eee9ad5f5a.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-image: url('../imgs/resume.jpg');">
+    <nav>
+      <div style="display: flex; justify-content: space-between;">
+        <h2 id="name"><a href="../index">Taboka Nyadza</a></h2>
+        <button class="hamburg" id="hamburg">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul class="navbar" id="navlist">
+        <li>
+          <a href="resume"><div class="navdiv">CV/Resume</div></a>
+        </li>
+        <li>
+          <a href="projects"><div class="navdiv">Projects</div></a>
+        </li>
+        <li>
+          <a href="contact"><div class="navdiv">Contact me</div></a>
+        </li>
+      </ul>
+    </nav>
+    <section style="margin-top: 90px;">
+      <div class="info">
+        <div class="infodiv">
+          <h2 style="font-size: 56px;"><a name="aboutme">CV/ Resume</a></h2>
+        </div>
+        <div id="skills" class="resumesect" style="flex-direction: column; justify-content: space-between;">
+          <div class="sect-title">
+            <span style="font-size: 36px; font-weight: bold;">Skills</span>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <div class="rescontent">
+              <div class="timeline">
+                  <p><b>Programming Languages</b><br>
+                  </p>
+              </div>
+              <div class="content-des">
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Python</p></li>
+                      <li><p>Java</p></li>
+                      <li><p>C</p></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="rescontent">
+              <div class="timeline">
+                <p><b>Technologies</b><br>
+                </p>
+              </div>
+              <div class="content-des">
+                <ul style="list-style-type: disc !important;">
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>Django</p></li>
+                  <li><p>SQL</p></li>
+                  <li><p>Git</p></li>
+                  <li><p>Linux</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rescontent">
+                  <div class="timeline">
+                    <p><b>Technical Skills</b><br>
+                    </p>
+                  </div>
+                  <div class="content-des">
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Electrical and Electronic Circuit design</p></li>
+                      <li><p>Micro-controller development</p></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="rescontent">
+                  <div class="timeline">
+                    <p><b>Soft Skills</b><br>
+                    </p>
+                  </div>
+                  <div class="content-des">
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Problem Solving</p></li>
+                      <li><p>Communication</p></li>
+                      <li><p>Teamwork</p></li>
+                      <li><p>Independent Working</p></li>
+                      <li><p>Project Management</p></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 95%; height: 35px; border-bottom: solid 1px navy; margin: auto;"></div>
+        <div style="width: 100%; height: 35px;"></div>
+        <div class="resumesect">
+              <div class="sect-title">
+                <span style="font-size: 36px; font-weight: bold;">Work Experience</span>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <div class="rescontent">
+                  <div class="timeline">
+                    <p><b>12/2021-1/2022</b><br>
+                      <div class="cont-title-mobile"><b>Network Technician Assistant</b><br><i>Utande Internet Sevices</i>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="content-des">
+                    <div class="cont-title-comp" style="padding-left: 25px; margin-top: 16px;"><b>Network Technician Assistant</b><br><i>Utande Internet Sevices</i></p></div>
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Provided technical support to customers by solving internet connectivity issues through phone
+                      consultations and site visitations</p></li>
+                      <li><p>Conducted site surveys and assessments to identify optimal locations and strategies for
+                        deploying LTE units for at least 3 diverse sites</p></li>
+                      <li><p>Communicated with customers to provide feedback on requirements for installation</p></li>
+                      <li><p>Managed customer accounts by either activating or suspending accounts on request</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rescontent">
+                  <div class="timeline"><p><b>12/2017-1/2018</b><br>
+                    <div class="cont-title-mobile"><b>Artisan Assistant</b><br><i>Zimbabwe Electricity Distribution and Transmission Company (ZETDC)</i></div></p></div>
+                  <div class="content-des">
+                    <div class="cont-title-comp" style="padding-left: 25px; margin-top: 16px;"><b>Artisan Assistant</b><br><i>Zimbabwe Electricity Distribution and Transmission Company (ZETDC)</i></p></div>
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Connected High voltage overhead cables to households</p></li>
+                      <li><p>Installed single-phase meter boxes for 5 households and three-phase meter boxes for 1
+                        company</p></li>
+                      <li><p> Performed pole-mounted transformer repairs</p></li>
+                    </ul>
+                  </div>
+                  </div>
+              </div>
+        </div>
+        <div class="space"></div>
+        <div class="resumesect">
+              <div class="sect-title">
+                <span style="font-size: 36px; font-weight: bold;">Education</span>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <div class="rescontent">
+                  <div class="timeline">
+                    <p><b>3/2017-12/2022</b><br>
+                      <div class="cont-title-mobile"><b>BSc in Electrical and Computer Engineering</b><br><i>University of Cape Town</i></div>
+                    </p>
+                  </div>
+                  <div class="content-des">
+                    <div class="cont-title-comp" style="padding-left: 25px; margin-top: 16px;"><b>BSc in Electrical and Computer Engineering</b><br><i>University of Cape Town</i></p>
+                    </div>
+                    <ul style="list-style-type: disc !important;">
+                      <li><p> Electives: Embedded Systems, Mobile and Wireless Networks, Digital Signal Processing,
+                      Computer Science(data structures, database management, and mobile application
+                      development)
+                      </p></li>
+                      <li><p>Other Courses: Research Project, Engineering Design, Professional Communication</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rescontent">
+                  <div class="timeline">
+                    <p><b>2015-2016</b><br>
+                      <div class="cont-title-mobile"><b>University of Cambridge Advanced Level Certificate</b><br><i>Christian Brothers College, Bulawayo</i>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="content-des">
+                    <div class="cont-title-comp" style="padding-left: 25px; margin-top: 16px;"><b>University of Cambridge Advanced Level Certificate</b><br><i>Christian Brothers College, Bulawayo</i></p>
+                    </div>
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Subjects: Mathematics, Physics, Computer Science</p></li>
+                      <li><p>Academic awards: half academic colours</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rescontent">
+                  <div class="timeline">
+                    <p><b>2011-2014</b><br>
+                      <div class="cont-title-mobile"><b>University of Cambridge IGCSE Certificate</b><br><i>Christian Brothers College, Bulawayo</i>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="content-des">
+                    <div class="cont-title-comp" style="padding-left: 25px; margin-top: 16px;"><b>University of Cambridge IGCSE Certificate</b><br><i>Christian Brothers College, Bulawayo</i></p>
+                    </div>
+                    <ul style="list-style-type: disc !important;">
+                      <li><p>Subjects: Mathematics, Physical Science, Computer Studies, Biology, 1st Language English,
+                        English Literature, Design and Technology, Geography, French</p></li>
+                      <li><p>Academic awards: half academic colours</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </section>
+    <div style="height: 80px;"></div>
+    <footer>
+      <section>
+        <div>
+          <i style="padding-bottom: 10px;" class="fa-regular fa-envelope"></i>
+          <a style="color: white; text-decoration: underline;" href="mailto:tnyadza@gmail.com">tnyadza@gmail.com</a>
+        </div>
+      <ul style="line-height: 18px">
+        <li><a href="https://www.linkedin.com/in/taboka-nyadza-2a1849161/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.github.com/nydtab001"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </section>
+    </footer>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS | Taboka Nyadza Portfolio</title>
+    <style>
+      .project img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media screen and (min-width: 600px) {
+        .project img {
+          max-width: 60%;
+          height: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eee9ad5f5a.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-image: url('../imgs/projectsback.png');">
+    <nav>
+      <div style="display: flex; justify-content: space-between;">
+        <h2 id="name"><a href="../index.html">Taboka Nyadza</a></h2>
+        <button class="hamburg" id="hamburg">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul class="navbar" id="navlist">
+        <li>
+          <a href="resume"><div class="navdiv">CV/Resume</div></a>
+        </li>
+        <li>
+          <a href="projects"><div class="navdiv">Projects</div></a>
+        </li>
+        <li>
+          <a href="contact"><div class="navdiv">Contact me</div></a>
+        </li>
+      </ul>
+    </nav>
+    <section style="margin-top: 90px;">
+      <div class="info">
+        <div class="infodiv">
+          <h2 style="font-size: 56px;"><a name="aboutme">Projects</a></h2>
+        </div>
+        <div style="width: 95%; height: 5px; border-bottom: solid 1px navy; margin: auto;"></div>
+        <div class="project">
+          <h2>Django E-commerce</h2>
+          <p>This project was an e-commerce built website using Python and the Django framework for the back-end
+            with MySQL for database management, HTML, CSS and Bootstrap for the front end.
+            Includes functionality for user management, product management, cart
+            management, order management and Payments integration using PayPal REST APIs.
+            </p>
+          <img src="../imgs/ecomm.jpg" alt="Project 5 Screenshot" style="display: block; margin: auto;">
+          <div class="project-links" style="padding-top: 10px; display: flex; justify-content: center;">
+            <a href="https://github.com/nydtab001/django-ecommerce">GitHub</a>
+            <a href="https://tc32.pythonanywhere.com/">Demo</a>
+          </div>
+        </div>
+        <div style="width: 95%; height: 5px; border-bottom: solid 1px navy; margin: auto;"></div>
+        <div class="project">
+          <h2>Poll Application</h2>
+          <p>The aim of this project was to design and develop a python-based voting web application using g HTML, CSS, JavaScript and Bootstrap for the front-end, and
+            Python and Django for the backend with SQLite for database management. The app includes fucntions for user management and result calculation using JavaScript. Furthermore, application tests where also included. A dockerfile is also available to enable compaitbility with any machine with docker installed. When a user registers or the first time, they are given either one of two options. Upon selection they are then taken to the resutls sectioin showing the poll statisitcs of the two options. After voting the user can only access the results section to prevent the user from changing or voting more than once.</p>
+          <img src="../imgs/poll.jpg" alt="Project 4 Screenshot" style="display: block; margin: auto;">
+          <div class="project-links" style="padding-top: 10px; display: flex; justify-content: center;">
+            <a href="https://github.com/nydtab001/pollapp">GitHub</a>
+            <a href="https://pollapp-ntaboka87.b4a.run/">Demo</a>
+          </div>
+        </div>
+        <div style="width: 95%; height: 5px; border-bottom: solid 1px navy; margin: auto;"></div>
+        <div class="project">
+          <h2>Mutlithreaded Typing Game</h2>
+          <p>The purpose of this project is to create a Java-based 2D typing game using multithreading, that displays random words to be typed before reaching the bottom. The random words data is generated from an input dictionary file. The prgram uses a makefile to run that is desinged for Linux systems.</p>
+          <img src="../imgs/typing.jpg" alt="Project 3 Screenshot" style="display: block; margin: auto;">
+          <div class="project-links" style="padding-top: 10px; display: flex; justify-content: center;">
+            <a href="https://github.com/nydtab001/Multithreaded_typing_game">GitHub</a>
+            <a href="#">Demo</a>
+          </div>
+        </div>
+        <div style="width: 95%; height: 5px; border-bottom: solid 1px navy; margin: auto;"></div>
+        <div class="project">
+          <h2>PI Cam Module API</h2>
+          <p>The aim of this project was to design and implement a Python-based IoT API for a surveillance system with using a raspberry pi 3B+ for residential, commercial or  industrial sites. The system includes a motion detector that captures images when motion is detected. These images are then sent to the administrtor's email for further investigation. In addition to image capture, videos can also be taken by the system upon the user's request. These can either be manually taken or automatically triggered by light intensity through a light sensor. All these functions are controlled remoteley by the amdinistrator through a web server.</p>
+          <img src="../imgs/picam.jpg" alt="Project 2 Screenshot" style="display: block; margin: auto;">
+          <div class="project-links" style="padding-top: 10px; display: flex; justify-content: center;">
+            <a href="https://github.com/nydtab001/eee3097_project">GitHub</a>
+            <a href="https://youtu.be/-pvqf6reM2A">Demo</a>
+          </div>
+        </div>
+        <div style="width: 95%; height: 5px; border-bottom: solid 1px navy; margin: auto;"></div>
+        <div class="project">
+          <h2>Greenhouse Monitoring</h2>
+          <p>The aim of this project was to implement a Python-based IoT environment logger for a greenhouse using a raspberry pi 3B+. The system collects various measurement data using analogue sensors at regular intervals. The data being collected for measurement were light, temperature and humidity. the sensors used to collect these measurements interaacted with the raspberry pi through an ADC to convert the analogue sensor readings to values. In order to view these measurements remotely, Blynk(an IoT platform) was used to allow these mesurements to be monitored in real-time on an Android smartphone. An RTC was used to determine the intervals at which measuremnets were taken and sent to the Blynk server.</p>
+          <img src="../imgs/greenhouse.jpg" alt="Project 1 Screenshot" style="display: block; margin: auto;">
+          <div class="project-links" style="padding-top: 10px; display: flex; justify-content: center;">
+            <a href="https://github.com/nydtab001/Greenhouse_monitoring">GitHub</a>
+            <a href="#">Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="height: 80px;"></div>
+    <footer>
+      <section>
+        <div>
+          <i style="padding-bottom: 10px;" class="fa-regular fa-envelope"></i>
+          <a style="color: white; text-decoration: underline;" href="mailto:tnyadza@gmail.com">tnyadza@gmail.com</a>
+        </div>
+        <ul style="line-height: 18px">
+          <li><a href="https://www.linkedin.com/in/taboka-nyadza-2a1849161/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.github.com/nydtab001"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </section>
+    </footer>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
