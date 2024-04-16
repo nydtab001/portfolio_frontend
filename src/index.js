@@ -55,10 +55,13 @@ form.addEventListener("submit", async (event) => {
   const formData = new FormData(form);
 
   // Make an asynchronous POST request to the backend endpoint
-  const response = await fetch("http://127.0.0.1:5000/submit/", {
-    method: "POST", // Use the POST method for form submission
-    body: formData, // Include the form data in the request body
-  });
+  const response = await fetch(
+    "https://portfoliobackend-8lrwnqd8.b4a.run/submit",
+    {
+      method: "POST", // Use the POST method for form submission
+      body: formData, // Include the form data in the request body
+    },
+  );
 
   if (response.ok) {
     const responseData = await response.json();
