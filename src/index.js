@@ -72,6 +72,7 @@ form.addEventListener("submit", async (event) => {
       console.error("Form submission failed:", responseData.error);
     }
   } else {
+    window.location.href = "https://ewzqxp-5000.csb.app/maintenance";
     console.error("Network error:", response.statusText);
   }
 });
