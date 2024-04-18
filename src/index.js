@@ -67,12 +67,12 @@ form.addEventListener("submit", async (event) => {
     const responseData = await response.json();
     if (responseData.success) {
       sessionStorage.setItem("formSubmitted", "true");
-      window.location.href = "https://ewzqxp-5000.csb.app/redirect";
+      window.location.href = "/redirect";
     } else {
       console.error("Form submission failed:", responseData.error);
     }
   } else {
-    window.location.href = "https://ewzqxp-5000.csb.app/maintenance";
+    window.location.href = "/maintenance";
     console.error("Network error:", response.statusText);
   }
 });
