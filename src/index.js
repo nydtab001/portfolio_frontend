@@ -67,12 +67,12 @@ form.addEventListener("submit", async (event) => {
     const responseData = await response.json();
     if (responseData.success) {
       sessionStorage.setItem("formSubmitted", "true");
-      window.location.href = "/redirect";
+      window.location.href = "/redirect.html";
     } else {
       console.error("Form submission failed:", responseData.error);
     }
   } else {
-    window.location.href = "/maintenance";
+    window.location.href = "/maintenance.html";
     console.error("Network error:", response.statusText);
   }
 });
